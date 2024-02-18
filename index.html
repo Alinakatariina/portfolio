@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo-menu-container">
+                <img src="images/[removal.ai]_e78c844f-2cce-40d4-83b4-17a6d646bc28-logo.png" alt="" class="Alogo"> <!-- Oletan, että sinulla on logo tiedosto -->
+                <ul class="top-level-menu" id="header">
+                    <li><a href="index.html">ETUSIVU</a></li>
+                    <li><a href="home.html">MINUSTA</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li>
+                        <a href="find.html">LÖYDÄ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+            </div>
+        </nav>
+        <div class="content-area">
+            <div class="paa">
+                <h1>Olen <span class="korostus">Alina</span> Palonen</h1>
+                <p class="sisalto">Tämä on portfolioni<br>
+                    Tervetuloa tutustumaan portfoliooni! Olen Alina, markkinointikoordinaattori joka innostuu luovista kampanjoista ja vaikuttavasta sisällöstä. Täällä pääset tutustumaan lisää minuun sekä muutamiin suosikkitöihini.                    
+                </p>
+            </div>
+            <div class="images">
+                <img src="images/muoto.jpeg" class="muoto" alt="">
+                <img src="images/[removal.ai]_4322fd3b-4d20-4a12-9db5-91c920725a6b-alppubusinessbosslady.png" class="mie" alt=""> <!-- Oletan, että sinulla on toinen kuva tiedosto -->
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+    var menu = document.getElementById("header");
+    var menuIcon = document.querySelector('.hamburger-menu');
+    menu.classList.toggle('responsive');
+    menuIcon.classList.toggle('active');
+}
+    </script>
+</body>
+</html>
