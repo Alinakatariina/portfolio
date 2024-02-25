@@ -181,6 +181,12 @@ body {
     margin: 0;
     padding: 0;
 }
+.linkkari {
+    margin-left: 268px;
+}
+.teksti {
+    margin-left: 268px;
+}
 
 /* Vastuulliset muutokset pienille näytöille */
 @media (max-width: 1023px) {
@@ -194,6 +200,7 @@ body {
     .Alogo {
         margin-right: 0; /* Poistetaan ylimääräinen oikea marginaali */
         order: 4;
+        height: 120px; /* Pienennetty korkeus */
     }
 
     .top-level-menu {
@@ -224,7 +231,6 @@ body {
 
     .top-level-menu.responsive {
         display: flex; /* Näytä kun hamburger-menua klikataan */
-        
     }
 
     .hamburger-menu {
@@ -235,6 +241,17 @@ body {
     .content-area {
         flex-direction: column;
         align-items: left;
+    }
+    .paa1 {
+        /* align-items: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative; */
+        margin: 0 0 0 0;
+        /* width: 100%; */
+        margin-top: 100px; /* tekstin ja otsikon väli */
+        /* padding: 0 30px; */
     }
 
 
@@ -267,7 +284,7 @@ body {
         z-index: 1000; /* Varmistetaan, että se on päällimmäisenä */
         border-radius: 5px; /* Pyöristetyt kulmat */
         padding: 5px; /* Sisätila */
-
+        margin-right: 20px; /* S''d' hampparin paikkaa */
     }
     
     
@@ -276,13 +293,14 @@ body {
     .hamburger-menu.active .icon::after,
     .hamburger-menu.active .icon {
         color: #ff0080; /* Säädä tämä väri tarpeesi mukaan */
+        
     }
     .hamburger-menu .icon {
         display: block; /* Asetetaan näkyväksi */
         width: 100%;
         height: 3px;
         background-color: #333; /* Tumma väri näkyvyyden parantamiseksi */
-        transition: all 0.3s ease;
+        transition: all 0.3s ease;        
     }
     .kuvat {
         flex-direction: column;
