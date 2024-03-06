@@ -181,20 +181,26 @@ body {
     margin: 0;
     padding: 0;
 }
-.linkkari {
-    margin-left: 268px;
-}
+
 .teksti {
     margin-left: 268px;
+}
+.pilvi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+
 }
 
 /* Vastuulliset muutokset pienille näytöille */
 @media (max-width: 1023px) {
     .navbar {
         height: auto;
-        flex-wrap: wrap;
         justify-content: space-between;
-        padding: 20px;
     }
 
     .Alogo {
@@ -206,25 +212,14 @@ body {
     .top-level-menu {
         display: none;
         flex-direction: column;
-        width: 100%;
-        top: 80px;
         margin-left: 60%;
-        padding-left: 0;
-        left: 0;
-    }
-
-    .top-level-menu li {
-        text-align: left;
-        width: 100%;
     }
 
     .top-level-menu li a {
-        padding: 10px 0; /* Lisää pystysuuntaista tilaa */
         width: 100%;
     }
 
     .top-level-menu li a:hover {
-        padding: 10px 0; /* Lisää pystysuuntaista tilaa */
         width: 100%;
         color: #ff0080;
     }
@@ -243,15 +238,11 @@ body {
         align-items: left;
     }
     .paa1 {
-        /* align-items: center;
-        display: flex;
         align-items: flex-start;
-        justify-content: space-between;
-        position: relative; */
-        margin: 0 0 0 0;
-        /* width: 100%; */
+        position: relative;
+        width: 80%;
         margin-top: 100px; /* tekstin ja otsikon väli */
-        /* padding: 0 30px; */
+        margin-right: 30px;
     }
 
 
@@ -284,28 +275,30 @@ body {
         z-index: 1000; /* Varmistetaan, että se on päällimmäisenä */
         border-radius: 5px; /* Pyöristetyt kulmat */
         padding: 5px; /* Sisätila */
-        margin-right: 20px; /* S''d' hampparin paikkaa */
+        margin-right: 50px; /* Säädä hampparin paikkaa */
+        margin-top: 0;
     }
     
-    
-    /* Aktiivinen hamburger-menu */
-    .hamburger-menu.active .icon::before,
-    .hamburger-menu.active .icon::after,
-    .hamburger-menu.active .icon {
-        color: #ff0080; /* Säädä tämä väri tarpeesi mukaan */
-        
-    }
     .hamburger-menu .icon {
         display: block; /* Asetetaan näkyväksi */
         width: 100%;
         height: 3px;
-        background-color: #333; /* Tumma väri näkyvyyden parantamiseksi */
-        transition: all 0.3s ease;        
+        background-color: #000000; /* Tumma väri näkyvyyden parantamiseksi */
+        transition: all 0.3s ease;     
+        margin-top: 0;   
+    }
+    .icon:hover {
+        background-color: #ff0080;  
     }
     .kuvat {
         flex-direction: column;
         align-items: center;
         margin: 10px 0;
     }
-
+    .pilvi {
+        display: none;   
+    }
+    .linkkari {
+        margin: 0 0 0 0;
+    }
 }
